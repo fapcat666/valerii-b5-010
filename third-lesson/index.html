@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 3</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <form class="form" action="http://maximumstart.herokuapp.com/register" method="POST">
+	<h1>Регистрация</h1>
+	<h5>*Все поля обязательны к заполнению</h5>
+	<p>
+		<label for="name-field">Имя</label>
+		<input type="text" id="name-field" name="name" required>
+	</p>
+	<p>
+		<label for="surname-field">Фамилия</label>
+		<input type="text" id="surname-field" name="surname" required>
+	</p>
+	<p>
+		<label for="phone-field">Телефон</label>
+		<input type="tel" id="phone-field" name="phone" pattern="38\[0-9]{3}\[0-9]{3}[0-9]{4}" placeholder="380XXXXXXXXX" required>
+	</p>
+	<p>
+		<label for="color-field">Любимый цвет</label>
+		<input type="color" id="color-field" name="color">
+	</p>
+	<p>
+		<label for="date-field">Сегодняшнее число</label>
+		<input type="date" id="date-field" name="date" required>
+	</p>
+	<p>
+		<label for="password-field">Пароль</label>
+		<input type="password" id="password-field" name="password" required>
+	</p>
+	<p class="gender">
+		<input type="radio" id="male-radio" name="gender" value="Мальчик" required>
+		<label for="male-radio">Мальчик</label>
+	</p>
+	<p class="gender">
+		<input type="radio" id="female-radio" name="gender" value="Девочка" required>
+		<label for="female-radio">Девочка</label>
+	</p>
+	<p class="gender">
+		<input type="radio" id="gender-radio" name="gender" value="Не определился" required>
+		<label for="gender-radio">Не определился</label>
+	</p>
+	<p>
+		<label for="messageField">Сообщение</label>
+		<input type="text" id="messageField" name="message" required>
+	</p>
+
+    <input type="submit" value="Отправить">
+
+   </form>
+</body>
+</html>

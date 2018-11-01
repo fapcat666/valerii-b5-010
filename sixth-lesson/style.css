@@ -1,0 +1,68 @@
+/*
+	Служебные стили. Тут ничего не стоит изменять!
+*/
+
+* {
+	font-family: sans-serif;	
+}
+
+.article__more {
+	text-decoration: none;
+}
+
+.article {
+	line-height: 27px;
+}
+
+.header {
+	text-align: center;
+}
+
+/*
+	Ниже можно начинать писать свои стили.
+*/
+
+body {
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 150px;
+	background-color: #e5e5e5;
+	padding: 40;		
+}
+
+.article {
+	padding: 30px 10px 30px 10px;
+	border: 1px dashed black;
+	margin: 30px; 
+	background-color: #CCC;
+	height: 180px;
+}
+
+.article__link {
+	text-decoration:underline;
+	color: black;
+}
+
+.article__more {
+	color: black;
+	text-decoration:none;	
+}
+
+.article__more:hover {
+	border-bottom: 1px dotted black;	
+}
+
+.footer {
+	background: #E5E5E5;
+	min-height: 50px;
+	border-top: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;	
+	padding: 15px;
+}
